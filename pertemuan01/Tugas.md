@@ -9,6 +9,8 @@ NPM  : 4524210044
 🗿 Before Modifikasi
 
 ✅ After Modifikasi
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a6b5db6-401f-4582-bd1f-1c2f8e8fc086" />
+
 ### 2. Modifikasi pada Kalkulator.php
 🗿 Before Modifikasi
 

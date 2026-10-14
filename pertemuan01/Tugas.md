@@ -7,6 +7,7 @@ NPM  : 4524210044
 ## Modifikasi
 ### 1. Modifikasi pada Biodata.php
 🗿 Before Modifikasi
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9dbf544-29ee-4b33-a2bf-97eb17c74d00" />
 
 ✅ After Modifikasi
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8a6b5db6-401f-4582-bd1f-1c2f8e8fc086" />

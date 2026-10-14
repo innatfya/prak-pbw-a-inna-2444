@@ -14,27 +14,29 @@ NPM  : 4524210044
 
 ### 2. Modifikasi pada Kalkulator.php
 🗿 Before Modifikasi
+<img width="1920" height="1080" alt="Screenshot (2998)" src="https://github.com/user-attachments/assets/53fb61a2-d28e-42c1-ab43-e00b0968b266" />
 
 ✅ After Modifikasi
+<img width="1920" height="1080" alt="Screenshot (2999)" src="https://github.com/user-attachments/assets/f55d5077-b166-4435-a240-57e031cb7cc7" />
+
 ## Lima Bagian Kode yang Paling Penting dari Biodata dan Kalkulator
 1. Function Status Kelulusan
 > Kode ini membuat fungsi yang menerima nilai IPK, lalu menggunakan if untuk menentukan predikat berdasarkan batas nilai tertentu. Penting karena proses penentuan predikat bisa dilakukan secara otomatis.
 ```php
-function statuskelulusan(float $ipk): string {
-    if ($ipk >= 3.50) return 'sangat memuaskan';
-    if ($ipk >= 3.00) return 'memuaskan';
-    return 'perlu peningkatan';
-}
+function statuskelulusan(float $학번): string {
+    if ($학번 >= 4.50) return '짱!!';
+    if ($학번 <= 4.50) return '오케이';
+    return '힘내!'; }
 ```
 2. Array Biodata Mahasiswa
 > Kode ini menyimpan beberapa data mahasiswa dalam bentuk associative array menggunakan pasangan key => value. Penting agar data biodata tersusun dan mudah dipanggil.
 ```php
 $mahasiswa = [
-    'nim' => '2026001',
-    'nama' => 'Park Jisung',
-    'prodi' => 'Biomedical Engineering',
-    'semester' => '7',
-    'ipk' => 3.87
+    '학번' => '20240144',
+    'nama' => '박지성 ♡',
+    '전공' => '의공학',
+    '학기' => '7',
+    '평점' => 5.52 ]
 ];
 ```
 3. Mengambil Input dari Form
@@ -50,19 +52,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 > Kode ini memeriksa operator yang dipilih dan menjalankan operasi matematika yang sesuai. Penting karena menjadi bagian utama dari proses perhitungan kalkulator.
 ```php
 switch ($operator) {
-    case '+':
-        $hasil = $a + $b;
-        break;
-    case '-':
-        $hasil = $a - $b;
-        break;
-    case '*':
-        $hasil = $a * $b;
-        break;
-    case '/':
-        $hasil = $a / $b;
-        break;
-}
+            case '+':
+                $hasil = $a + $b;
+                break;
+            case '-':
+                $hasil = $a - $b;
+                break;
+            case '*':
+                $hasil = $a * $b;
+                break;
+            case '/':
+                if ($b == 0) {
+                    $pesan = 'Pembagian dengan nol tidak diperbolehkan.'; } 
+                else {
+                    $hasil = $a / $b; }
+            break;}
 ```
 5. Menampilkan Biodata dengan Foreach
 > Kode ini melakukan perulangan pada setiap data dalam array $mahasiswa dan menampilkannya. Penting karena semua data dapat ditampilkan otomatis tanpa menulis kode untuk setiap biodata satu per satu.

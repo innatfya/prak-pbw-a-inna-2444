@@ -129,7 +129,7 @@ if (isset($_SESSION['hasil']) || isset($_SESSION['pesan'])) {
                 type="number"
                 step="any"
                 name="a"
-                placeholder="Angka 1"
+                placeholder="숫자 1"
                 required>
 
             <select name="operator">
@@ -143,10 +143,10 @@ if (isset($_SESSION['hasil']) || isset($_SESSION['pesan'])) {
                 type="number"
                 step="any"
                 name="b"
-                placeholder="Angka 2"
+                placeholder="숫자 2"
                 required>
 
-            <button type="submit">Hitung</button>
+            <button type="submit">계산</button>
         </form>
 
         <?php if ($pesan): ?>
@@ -155,7 +155,7 @@ if (isset($_SESSION['hasil']) || isset($_SESSION['pesan'])) {
             </p>
         <?php elseif ($hasil !== null): ?>
             <div class="hasil">
-                Hasil:
+                결과:
                 <strong>
                     <?= htmlspecialchars((string) $hasil) ?>
                 </strong>

@@ -17,7 +17,7 @@ NPM  : 4524210044
 <img width="1920" height="1080" alt="Screenshot (2998)" src="https://github.com/user-attachments/assets/53fb61a2-d28e-42c1-ab43-e00b0968b266" />
 
 ✅ After Modifikasi
-<img width="1920" height="1080" alt="Screenshot (2999)" src="https://github.com/user-attachments/assets/f55d5077-b166-4435-a240-57e031cb7cc7" />
+<img width="1920" height="1080" alt="Screenshot (3000)" src="https://github.com/user-attachments/assets/eee46525-c54a-4996-8415-bd3a1e3f269b" />
 
 ## Lima Bagian Kode yang Paling Penting dari Biodata dan Kalkulator
 1. Function Status Kelulusan
